@@ -48,5 +48,3 @@ const handleFormSubmitted = () => {
     </template>
   </ECModal>
 </template>
-
-<style scoped></style>

@@ -35,9 +35,3 @@ defineProps<Props>()
     <input type="submit" ref="formSubmit" class="visually-hidden" />
   </form>
 </template>
-
-<style scoped>
-.primary-button {
-  padding: 0.5rem 0.75rem;
-}
-</style>
