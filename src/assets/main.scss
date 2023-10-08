@@ -1,0 +1,43 @@
+@import './base.css';
+@import './utility.scss';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
+
+[aria-invalid='true'] {
+  box-shadow: 0 0 0 1px var(--c-error);
+}
+
+input,
+textarea {
+  display: block;
+
+  outline: none;
+  border-width: 0px;
+  box-shadow: 0 0 0 1px var(--text-w-300);
+  font-size: var(--fs-small);
+  padding: 0.75rem 0.5rem;
+  margin-block: 0.125rem;
+  border-radius: 3px;
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px var(--c-focus);
+  }
+}
