@@ -30,7 +30,7 @@ const closeModal = () => {
 <template>
   <Teleport v-if="value" to="body">
     <div class="modal-overlay" @mousedown="closeModal">
-      <div class="modal" :style="{ maxWidth: maxWidth }" @mousedown.stop>
+      <div class="modal" :style="{ maxWidth: `min(80%, ${maxWidth})` }" @mousedown.stop>
         <div class="modal__header">
           <slot name="header">{{ title }}</slot>
         </div>
