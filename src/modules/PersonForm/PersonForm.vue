@@ -138,7 +138,6 @@ defineExpose({
       label="Cообщение"
       placeholder="Не более 500 символов"
       :error="errors['message']"
-      required
     ></TextareaField>
   </ECForm>
 </template>
