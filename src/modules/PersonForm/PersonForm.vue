@@ -5,7 +5,7 @@ import TextareaField from '@/components/TextareaField.vue'
 import { reactive, watch, computed } from 'vue'
 import type { IFormFields } from './personForm'
 
-const REQUIRED_FIELDS = ['name', 'phone', 'email', 'message']
+const REQUIRED_FIELDS = ['name', 'phone', 'email']
 const PHONE_REGEX = new RegExp(/^\+7\d{10}$/)
 const EMAIL_REGEX = new RegExp(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/)
 
